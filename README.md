@@ -10,7 +10,7 @@ PLACEHOLDER URL TO JOURNAL PAPER
 
 The models all require different input data
 
-|No. |Clear-sky Model| Eo | zen | h | alb | p | T | TL | AOD | alpha| beta | uO3| uNO2 | uH2O | tau | Total 
+|No. |Clear-sky Model| Eo | zen | h | alb | p | T | TL | AOD | alp| beta | O3| NO2 | H2O | tau| Tot 
 |---|---------|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
 |1 | TJ |  | •  | | | | | | | | | | | | | 1 
 |2 | Schulze |  | •  | | | | | | | | | | | | | 1 
