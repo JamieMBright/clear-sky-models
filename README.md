@@ -1,37 +1,68 @@
-## Welcome to GitHub Pages
+# Welcome to the clear-sky irradiance model library
+This Github repository contains many clear-sky irradiance models as coded in R, though occasionally Matlab.
+This repository was created to conicide with our research publication titled "Rigorous worldwide performance assessment of 75 global clear-sky irradiance models using Principal Component Analysis" published in the Journal of Renewable and Sustainable Energy Reviews and authored by Xixi Sun, Jamie M. Bright, Christian A. Gueymard, Brendan Acord, Peng Wang and Nicholas A. Engerer.
 
-You can use the [editor on GitHub](https://github.com/JamieMBright/clear-sky-models/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+The R code available in this repository was written by Xixi Sun.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## About the models
+The reader is referred to our publication and its accompanying supplementary material in order to fully understand the workings of these models. There you will find our interpretation and links to the original work.
+PLACEHOLDER URL TO JOURNAL PAPER
 
-### Markdown
+The models all require different input data
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+|No. |Clear-sky Model| Eo | zen | h | alb | p | T | TL | AOD | alpha| beta | uO3| uNO2 | uH2O | tau | Total 
+|---|---------|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
+|1 | TJ |  | •  | | | | | | | | | | | | | 1 
+|2 | Schulze |  | •  | | | | | | | | | | | | | 1 
+|3 | DPP |  | •  | | | | | | | | | | | | | 1 
+|4 | Adnot |  | •  | | | | | | | | | | | | | 1 
+|5 | Biga |  |  •  | | | | | | | | | | | | | 1 
+|6 | ASHRAE |  |  •  | | | | | | | | | | | | | 1 
+|7 | Sharma |   •  |  •  | | | | | | | | | | | | | 2 
+|8 | El Mghouchi |   •  |  •  | | | | | | | | | | | | | 2 
+|9 | Yang & Walsh |   •  |  •  | | | | | | | | | | | | | 2 
+|10 | HLJ |  •  |  •  |  • |  |  |  |  |  |  | | | |  |  | 3 
+|11 | Kumar |  •  |  • |  |  |  • |  |  |  |  |  |  | | |  | 3 
+|12 | Campbell |  •  |  • |  |  |  • |  |  |  |  |  |  | | |  | 3 
+|13 | Fu \| Rich |   • |  • |  •  |  | | |  |  |  | | | |  |  | 3 
+|14 | Atwater & Ball-1 |  •  |  •  |  | |  •  | | | | | | | |  • | |4 
+|15 | KASM |  •  |  •  | | |  •  | | | | | | | |  • | |4 
+|16 | Capderou |  •  |  •  | •  | |  •  | | | | | | | | | |4 
+|17-22 | Kasten |   •  |  • |  • |  |  |  |  • |  | | | | | | | 4 
+|23-28 | Heliosat-1 |   •  |  •  |  |  |  • |  |  • |  |  | |  | | | | 4 
+|29-34 | ESRA |   •  |  • |  •  | | | |  • | | | | | | | | 4 
+|35-40 | Heliosat-2 |  •  |  • |  • |  |  |  |  • |  |  | | | |  | | 4 
+|41-46 | Ineichen & Perez |   •  |  •  |  • |  |  |  |  • |  | | | |  |  | | 4 
+|47 | CLS |  •  |  •  |  |  •  |  • |  |  | |  |  |  |  |  • | |5 
+|48 | King |  •  |  •  |  |  •  |  • |  |  | |  |  •  |  |  | | |5 
+|49 | Josefsson |   •  |  •  |  |  •  |  • |  |  | |  |  |  |  |  • | |5 
+|50 | Badescu |   • |  • |  |  |  • |  |  | |  |  |  •  |  |  • | |5 
+|51 | Simplified Solis |   •  |  •  |  |  |  • |  |  |  • |  |  |  |  |  • | |5 
+|52 | Advanced Solis |   •  |  •  |  |  |  • |  |  |  • |  |  |  |  |  • | |5 
+|53 | Perrin |   •  |  •  |  |  |  • |  |  | |  |  •  |  •  |  |  • | |6 
+|54 | CEM |   •  |  •  |  |  •  |  • |  |  |   • | |  |  |  |  • | |6 
+|55 | Atwater & Ball-2 |   •  |  • |  |  • |  •  |  |   |  •  |  |  |  |  |  •  | |6 
+|56 | RSC |   •  |  •  |  |  •  |  •  |  |   | |  |  •  |  |  |  •  | |6 
+|57 | PSIM |   •  |  •  |  |  •  |  •  |  |   | |  |  •  |  |  |  •  | |6 
+|58 | Bashahu |  •  |  •  | | |  • | | | |  •  |  •  | |  |  •  | |6 
+|59 | MMAC |   •  |  •  |  |  •  |  •  |  |  |  •  |  |  |  |  |  •  | |6 
+|60 | Yang |   •  |  •  |  |  |  •  |  |  |  |  |  •  |  •  |  |  •  | |6 
+|61 | Calinoiu |  •  |  •  |  |  |  |  |  |  |  |  •  |  •  |  •  |  • | |6 
+|62 | Hoyt | •  |  •  |  |  •  |  •  |  |  |  |  |  •  |  •  |  |  •  | | 7 
+|63 | MAC |   •  |  •  |  |  •  |  •  |  |  |  |  •  |  •  |  |  |  •  |  |7 
+|64 | METSTAT |   •  |  •  | |  •  |  •  |  |  |  •  | | |  •  | |  •  | | 7 
+|65 | PSI-REST |   •  |  •  | |  •  |  •  | | | | |  •  |  •  | |  •  | | 7 
+|66 | Paulescu & Schlett |   •  |  •  |  •  | |  •  | | | | |  •  |  •  | |  •  | | 7 
+|67 | MRM v5 |   •  |  •  |  |  •  |  •  |  |  |  |  |  •  |  •  |  |  • | |7 
+|68 | MRM v7 |   •  |  •  |  |  •  |  •  |  |  |  •  | | |  •  |  |  •  |  | 7 
+|69 | Janjai |  •  |  •  |  •  | |  |  |  |  |  •  |  • |  • |  |  •  | | 7 
+|70 | Bird |   •  |  •  |  |  • |  •  |  |  | |  •  |  • |  • |  |  • | |8 
+|71 | Iqbal-c |   •  |  •  |  |  •  |  •  |  |  | |  •  |  • |  • |  |  • | |8 
+|72 | Modified Iqbal-c |  •  |  •  |  •  |  •  |   |  |  |  |  •  |  •  |  •  |  |  •  | |8 
+|73 | REST2v5 |   •  |  •  |  |  •  |  •  |  |  |  |  • |  • |  • |  • |  • || 9 
+|74 | REST2v9 |  •  |  •  |  |  •  |  •  |  |  |  |  •  |  •  |  •  | |  •  |  •  | 9 
+|75 | McClear |   •  |  •  |  •  |  •  |  •  |  •  |  |   •  |  •  | | •  | |  •  | | 10 
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/JamieMBright/clear-sky-models/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
