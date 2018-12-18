@@ -68,3 +68,7 @@ The models all require different input data
 We obtained these input data from the MERRA2 reanalysis database. 
 The reader is again referred to the data section of our paper in order to learn how to access these inputs.
 
+## Disclaimer
+We do not offer support for these models, however, we welcome any fixes or edits suggested by users. 
+The intelectual property of these models remains with the authors credited within the paper. 
+All models made available are already in the public domain, notable methodologies are not such as REST2v9 which is proprietry and McClear which is a website.
