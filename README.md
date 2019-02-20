@@ -1,6 +1,6 @@
 # Welcome to the clear-sky irradiance model library
-This Github repository contains many clear-sky irradiance models as coded in R, though occasionally Matlab.
-This repository was created to conicide with our research publication titled "Rigorous worldwide performance assessment of 75 global clear-sky irradiance models using Principal Component Analysis" published in the Journal of Renewable and Sustainable Energy Reviews and authored by Xixi Sun, Jamie M. Bright, Christian A. Gueymard, Brendan Acord, Peng Wang and Nicholas A. Engerer.
+This Github repository contains many clear-sky irradiance models as coded in R. Occasionally a model will be available in Matlab, though this is not an objective of ours.
+This repository was created to coincide with our research publication titled "Rigorous worldwide performance assessment of 75 global clear-sky irradiance models using Principal Component Analysis" published in the Journal of Renewable and Sustainable Energy Reviews and authored by Xixi Sun, Jamie M. Bright, Christian A. Gueymard, Brendan Acord, Peng Wang and Nicholas A. Engerer.
 
 The R code available in this repository was written by Xixi Sun.
 
@@ -52,16 +52,16 @@ The models all require different input data
 |62 | Hoyt | •|•||•|•|||||•|•||•| | 7 
 |63 | MAC | •|•||•|•||||•|•|||•||7 
 |64 | METSTAT | •|•| |•|•|||•| | |•| |•| | 7 
-|65 | PSI-REST | •|•| |•|•| | | | |•|•| |•| | 7 
+|65 | PR | •|•| |•|•| | | | |•|•| |•| | 7 
 |66 | Paulescu & Schlett | •|•|•| |•| | | | |•|•| |•| | 7 
 |67 | MRM v5 | •|•||•|•|||||•|•||• | |7 
-|68 | MRM v7 | •|•||•|•|||•| | |•||•|| 7 
+|68 | MRM v6.1 | •|•||•|•|||•| | |•||•|| 7 
 |69 | Janjai |•|•|•| |||||•|• |• ||•| | 7 
 |70 | Bird | •|•||• |•||| |•|• |• ||• | |8 
 |71 | Iqbal-c | •|•||•|•||| |•|• |• ||• | |8 
 |72 | Modified Iqbal-c |•|•|•|•| ||||•|•|•||•| |8 
 |73 | REST2v5 | •|•||•|•||||• |• |• |• |• || 9 
-|74 | REST2v9 |•|•||•|•||||•|•|•| |•|•| 9 
+|74 | REST2v9.1 |•|•||•|•||||•|•|•| |•|•| 9 
 |75 | McClear | •|•|•|•|•|•|| •|•| | •| |•| | 10 
 
 
@@ -69,6 +69,6 @@ We obtained these input data from the MERRA2 reanalysis database.
 The reader is again referred to the data section of our paper in order to learn how to access these inputs.
 
 ## Disclaimer
-We do not offer support for these models, however, we welcome any fixes or edits suggested by users. 
-The intelectual property of these models remains with the authors credited within the paper. 
-All models made available are already in the public domain, notable methodologies are not such as REST2v9 which is proprietry and McClear which is a website.
+We do not offer support for these models, however, we welcome suggested fixes or edits by users. 
+The intellectual property of these models remains with the authors credited within the paper. 
+All models made available are already in the public domain, notable methodologies are not such as REST2v9 which is proprietary and McClear which is a website.
