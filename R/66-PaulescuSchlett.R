@@ -56,7 +56,7 @@ IrradiancePaulescu<-function(altitude){
     EbnPaulescu=Eext*Tr*Ta*Twv*To3*Tg
     
     #diffuse horizontal radiation
-    gama=0.5 
+    gama=0.432
     EdhPaulescu=gama*Eext*cos(sza)*(1-Tr*Ta)*Twv*To3*Tg
 	
 	#global radiation
