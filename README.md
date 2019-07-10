@@ -1,6 +1,6 @@
 # Welcome to the clear-sky irradiance model library
 This Github repository contains many clear-sky irradiance models as coded in R. Occasionally a model will be available in Matlab, though this is not an objective of ours.
-This repository was created to coincide with our research publication titled "Rigorous worldwide performance assessment of 75 global clear-sky irradiance models using Principal Component Analysis" published in the Journal of Renewable and Sustainable Energy Reviews and authored by Xixi Sun, Jamie M. Bright, Christian A. Gueymard, Brendan Acord, Peng Wang and Nicholas A. Engerer.
+This repository was created to coincide with our research publication titled "Worldwide performance assessment of 75 global clear-sky irradiance models using Principal Component Analysis" published in the Journal of Renewable and Sustainable Energy Reviews and authored by Xixi Sun, Jamie M. Bright, Christian A. Gueymard, Brendan Acord, Peng Wang and Nicholas A. Engerer.
 
 The R code available in this repository was written by Xixi Sun.
 
