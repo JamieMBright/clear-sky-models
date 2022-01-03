@@ -23,9 +23,9 @@ IrradianceTJ<-function(){
     mA=1/cos(sza)
     
     #coefficients
-    A=1160+75*sin(360*(Dayth-275)/365)
-    k=0.174+0.035*sin(360*(Dayth-100)/365)
-	C=0.095+0.04*sin(360*(Dayth-100)/365)
+    A=1160+75*sin(360*(Dayth-275)/365*pi/360) # degrees to radians
+    k=0.174+0.035*sin(360*(Dayth-100)/365*pi/360) # degrees to radians
+    C=0.095+0.04*sin(360*(Dayth-100)/365*pi/360) # degrees to radians
 	
 	#direct normal irradiance
 	EbnTJ=A*exp(-k*mA)
